@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-dark-text font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-dark-panel/80 backdrop-blur-md border border-dark-border shadow-xl;
+  }
+  
+  /* Custom Scrollbar for a premium look */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-bg;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-border rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-dark-muted;
+  }
+}
