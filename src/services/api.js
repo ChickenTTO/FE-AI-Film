@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5001/api";
+const API_BASE_URL =
+  "https://api-tao-phim-330259691464.asia-southeast1.run.app/api";
 
 export const generateFilm = async (prompt, onProgressUpdate) => {
   try {
